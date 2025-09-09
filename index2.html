@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echoes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./img/Logo (7).svg" type="image/x-icon" />
+</head>
+<body>
+       <header class="p-5 bg-zinc-800 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <div>
+               <img src="./img/Logo (7).svg" alt="" class="h-8 md:h-10"> 
+            </div>
+            <div class="hidden md:flex gap-6 lg:gap-12 text-white">
+               <a href="./index.html" class="hover:text-gray-300 transition-colors">La Formation</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Blog</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Case Studies</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white p-2" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+            <div class="flex flex-col gap-4 text-white">
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">La Formation</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Blog</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Case Studies</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</header>
+<!-- header end -->
+ <!-- shovkese start -->
+  <section class="bg-gray-950 p-6 md:p-12 lg:p-24">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div>
+                <h1 class=" md:text-5xl lg:text-6xl xl:text-[72px] text-white font-medium text-6xl mb-3">Customer success <br> is our <span class="text-purple-900">success</span></h1>
+                <h5 class="text-lg md:text-2xl lg:text-3xl xl:text-[32px] text-white font-medium mb-4">Discover how businesses like yours use <br> Intercom to acquire, engage, and <br> support customers.</h5>
+                <button class="w-full md:w-[169px] h-[64px] bg-purple-900 text-white text-[18px] rounded-4xl cursor-pointer hover:bg-purple-700">View Stories</button>
+            </div>
+            <div class="w-full max-w-[360px] lg:w-[360px]  rounded-3xl">
+                <img class="mb-10 rounded-3xl w-full" src="./img-2/Frame 102.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- shovkese end -->
+
+
+<section class="bg-black py-10">
+  <div class="container mx-auto">
+    <div class="flex items-center justify-center relative mb-10">
+      <h2 class="text-3xl sm:text-4xl md:text-[48px] font-medium text-white text-center flex items-center gap-3">
+        <img src="./img-2/Fill 159.svg" alt="">All Stories
+      </h2>
+    </div>
+
+    <!-- 2 cards row -->
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-14 mb-14">
+      <div class="w-full sm:w-[90%] lg:w-[528px] bg-slate-900 rounded-3xl overflow-hidden">
+        <img class="rounded-t-3xl w-full" src="./img-2/Frame 104.png" alt="">
+        <h3 class="text-white text-[18px] font-medium p-3">IÉSEG</h3>
+        <p class="text-slate-400 text-[18px] font-medium px-3">Reach Social Média X5</p>
+        <p class="underline decoration-blue-500 text-white text-[18px] font-medium p-3">En savoir plus</p>
+      </div>
+
+      <div class="w-full sm:w-[90%] lg:w-[528px] bg-slate-800 rounded-3xl overflow-hidden">
+        <img class="rounded-t-3xl w-full" src="./img-2/Frame 104 (1).png" alt="">
+        <h3 class="text-white text-[18px] font-medium p-3">Ça fait un bail !</h3>
+        <p class="text-slate-400 text-[18px] font-medium px-3">5000€ de revenu par mois avec le sponsoring</p>
+        <p class="underline decoration-blue-500 text-white text-[18px] font-medium p-3">En savoir plus</p>
+      </div>
+    </div>
+
+    <!-- 3 cards -->
+    <div class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap items-center justify-center gap-6">
+      <div class="w-full sm:w-[48%] lg:w-[344px] bg-yellow-950 rounded-3xl overflow-hidden">
+        <img class="rounded-t-3xl w-full" src="./img-2/Frame 48.png" alt="">
+        <h3 class="text-white text-[18px] font-medium p-3">CEG</h3>
+        <p class="text-slate-400 text-[18px] font-medium p-3">10 leads par épisode en <br> moyenne</p>
+        <p class="underline decoration-blue-500 text-white text-[18px] font-medium p-3">En savoir plus</p>
+      </div>
+
+      <div class="w-full sm:w-[48%] lg:w-[344px] bg-lime-950 rounded-3xl overflow-hidden">
+        <img class="rounded-t-3xl w-full" src="./img-2/Frame 48 (1).png" alt="">
+        <h3 class="text-white text-[18px] font-medium p-3">Ça fait un bail !</h3>
+        <p class="text-slate-400 text-[18px] font-medium p-3">5000€ de revenu par mois avec le sponsoring</p>
+        <p class="underline decoration-blue-500 text-white text-[18px] font-medium p-3">En savoir plus</p>
+      </div>
+
+      <div class="w-full sm:w-[100%] lg:w-[344px] bg-slate-800 rounded-3xl overflow-hidden">
+        <img class="rounded-t-3xl w-full" src="./img-2/Frame 48 (2).png" alt="">
+        <h3 class="text-white text-[18px] font-medium p-3">Stoïk</h3>
+        <p class="text-slate-400 text-[18px] font-medium p-3">
+          Tous les invités sont des acteurs <br> très médiatisés de l’industrie <br> Cyber
+        </p>
+        <p class="underline decoration-blue-500 text-white text-[18px] font-medium p-3">En savoir plus</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about end -->
+<section class="bg-black p-10 md:p-20">
+  <div class="container mx-auto">
+    <div class="bg-purple-600 rounded-3xl p-6 md:p-10">
+      
+      <div class="p-4 text-center">
+        <h2 class="text-3xl sm:text-4xl md:text-[48px] mb-6 text-white font-medium">Contactez-nous</h2>
+        <p class="text-base sm:text-lg mb-5 text-white font-medium">
+          1. Vous serez rappelé par Xavier ou Jérémy pour prendre rendez-vous et <br class="hidden sm:block">
+          évaluer le potentiel de votre projet podcast
+        </p>
+        <p class="text-base sm:text-lg text-white font-medium">
+          2. On vous propose un plan de lancement personnalisé et une offre <br class="hidden sm:block">
+          d'accompagnement en moins de 72h.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="p-4 rounded-lg">
+          <label class="block text-white text-sm font-medium mb-2">Prénom</label>
+          <input type="text" placeholder="Indiquez votre prénom"
+            class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 bg-white focus:ring-purple-300 focus:outline-none">
+        </div>
+
+        <div class="p-4 rounded-lg">
+          <label class="block text-white text-sm font-medium mb-2">Email</label>
+          <input type="email" placeholder="Indiquez votre email"
+            class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 bg-white focus:ring-purple-300 focus:outline-none">
+        </div>
+
+        <div class="p-4 rounded-lg">
+          <label class="block text-white text-sm font-medium mb-2">Téléphone</label>
+          <input type="tel" placeholder="Le numéro pour vous rappeler"
+            class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 bg-white focus:ring-purple-300 focus:outline-none">
+        </div>
+
+        <div class="p-4 rounded-lg">
+          <label class="block text-white text-sm font-medium mb-2">Projet</label>
+          <textarea rows="4" placeholder="Sujet, format, objectifs, ..."
+            class="w-full px-4 py-3 rounded-lg border-0 focus:ring-2 bg-white focus:ring-purple-300 focus:outline-none"></textarea>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center mt-7">
+        <button
+          class="w-[180px] sm:w-[214px] h-[56px] sm:h-[64px] text-purple-800 rounded-3xl bg-white text-lg font-medium hover:bg-slate-300 transition cursor-pointer">
+          Réserver un appel
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end -->
+
+<section class="bg-black p-10 md:p-20">
+  <div class="container mx-auto">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10 mb-20">
+      
+      <!-- Card 1 -->
+      <div class="w-full sm:w-[90%] lg:w-[528px] bg-green-700 p-6 md:p-8 rounded-3xl flex flex-col lg:flex-row items-center gap-6">
+        <div class="">
+          <p class="text-lg text-white font-medium mb-4">Victor Lora</p>
+          <h2 class="text-xl sm:text-2xl md:text-[28px] text-white mb-4 font-medium">
+            La retraite à 40 ans creates joyful <br> experiences for millions of learners
+          </h2>
+          <p class="underline decoration-blue-600 mb-4 text-lg font-medium text-white">Lire l’interview</p>
+        </div>
+        <div class="">
+          <img class="w-full sm:w-[370px] rounded-xl" src="./img/Rectangle 11 (2).png" alt="">
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full sm:w-[90%] lg:w-[528px] bg-teal-800 p-6 md:p-8 rounded-3xl flex flex-col lg:flex-row items-center gap-6">
+        <div class="">
+          <p class="text-lg text-white font-medium mb-4">Creator Conversation</p>
+          <h2 class="text-xl sm:text-2xl md:text-[28px] text-white mb-4 font-medium">
+            Dui et a egestas orci. Pharetra at vel <br> volutpat lectus. Amet tortor amet.
+          </h2>
+          <p class="underline decoration-blue-600 mb-4 text-lg font-medium text-white">Lire l’interview</p>
+        </div>
+        <div class="">
+          <img class="w-full sm:w-[370px] rounded-xl" src="./img/image 1 (1).png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer  -->
+<footer class="bg-zinc-800 p-6 md:p-9">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row md:items-start items-center justify-between gap-8 md:gap-12 text-center md:text-left">
+      
+      <div>
+        <img src="./img/Frame 110.svg" alt="">
+      </div>
+
+      <div>
+        <h4 class="text-lg sm:text-xl md:text-[24px] text-white font-medium mb-3 md:mb-4">Services</h4>
+        <a href="./index.html" class="block text-white hover:text-gray-300">Agence</a>
+        <a href="./index.html" class="block text-white hover:text-gray-300">Formation</a>
+      </div>
+
+      <div>
+        <h4 class="text-lg sm:text-xl md:text-[24px] text-white font-medium mb-3 md:mb-4">Support</h4>
+        <a href="./index.html" class="block text-white hover:text-gray-300">Case Studies</a>
+        <a href="./index.html" class="block text-white hover:text-gray-300">Ressources</a>
+      </div>
+
+      <div>
+        <h4 class="text-lg sm:text-xl md:text-[24px] text-white font-medium mb-3 md:mb-4">Nous suivre</h4>
+        <div class="flex justify-center md:justify-start gap-6">
+          <img src="./img/6331b93094277b8daf17bb10_instagram-white 1.svg" alt="">
+          <img src="./img/6331b93015d0d836cadd8462_twitter-white 1.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+</body>
+</html>
