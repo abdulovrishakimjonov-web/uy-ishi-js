@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echoes</title>
+    <link rel="stylesheet" href="./style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./img/Logo (7).svg" type="image/x-icon" />
+</head>
+<body>
+   <header class="p-5 bg-zinc-800 sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <div>
+               <img src="./img/Logo (7).svg" alt="" class="h-8 md:h-10"> 
+            </div>
+            <div class="hidden md:flex gap-6 lg:gap-12 text-white">
+               <a href="./index.html" class="hover:text-gray-300 transition-colors">La Formation</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Blog</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Case Studies</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white p-2" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden mt-4 pb-4">
+            <div class="flex flex-col gap-4 text-white">
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">La Formation</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Blog</a>
+                <a href="./index.html" class="hover:text-gray-300 transition-colors">Case Studies</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</header>
+    <!-- header end -->
+<section class="bg-gray-950 p-6 md:p-12 lg:p-24">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div>
+                <h1 class=" md:text-5xl lg:text-6xl xl:text-[72px] text-white font-medium text-6xl mb-3">Créez un podcast <br>pour développer <br>votre <span class="text-purple-900">acquisition</span></h1>
+                <h5 class="text-lg md:text-2xl lg:text-3xl xl:text-[32px] text-white font-medium mb-4">Echoes vous forme et vous  <br> accompagne pour faire grandirune  <br>communauté engagée.</h5>
+                <button class="w-full md:w-[169px] h-[64px] bg-purple-900 text-white text-[18px] rounded-4xl cursor-pointer hover:bg-purple-700">Commencer</button>
+            </div>
+            <div class="w-full max-w-[360px] lg:w-[360px] bg-white rounded-3xl">
+                <img class="mb-10 rounded-3xl w-full" src="./img/image 6.png" alt="">
+                <p class="text-center mb-3 text-[18px] font-medium">Xavier et Jérémy vous présentent <br> Echoes, et vous donnent les clés <br> du succès.</p>
+                <p class="text-center mb-10 text-gray-400 text-[14px]">1min24</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- showcesi end -->
+
+<section class="bg-black p-6 md:p-10">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8 md:mb-14">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl xl:text-[54px] text-white font-medium">Rejoignez les nombreux   <span class="text-purple-900"> créateurs</span> <br class="hidden md:block">qui nous ont fait confiance</h2>
+        </div>
+        <div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-7 justify-center mb-8 md:mb-15">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 3 (2).png" alt="">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 4 (1).png" alt="">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 5 (1).png" alt="">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 6 (1).png" alt="">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 7 (1).png" alt="">
+            <img class="hover:translate-y-px w-full max-w-[150px] md:max-w-none" src="./img/Rectangle 8.png" alt="">
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-25 mb-12 md:mb-20">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-5xl lg:text-[64px] font-medium text-white">780</h2>
+                <p class="text-base md:text-[18px] text-white">épisodes diffusés <br class="hidden sm:block">(et autant de rencontres provoquées)</p>
+            </div>
+            <div class="text-center">
+                <h2 class="text-3xl md:text-5xl lg:text-[64px] font-medium text-white">4x</h2>
+                <p class="text-base md:text-[18px] text-white">plus de reach sur les réseaux (depuis le <br class="hidden sm:block"> lancement de leur podcast)</p>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8">
+            <img class="max-w-[120px] md:max-w-none" src="./img/Logo-BNP 1.png" alt="">
+            <img class="max-w-[120px] md:max-w-none" src="./img/Logo-FDJ 1.png" alt="">
+            <img class="max-w-[120px] md:max-w-none" src="./img/Logo-Intersport 1.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- about end -->
+
+<section class="bg-black">
+    <div class="container">
+        <div>
+            <div class=" text-center mb-10 ">
+                <h2 class="text-[54px] text-white font-medium ">Trouvez l’accompagnement <br>le plus adapté à vos <span class="text-purple-900" >objectifs</span></h2>
+            </div>
+            <div class="w-[1080px] flex justify-between rounded-3xl p-10 mb-10 bg-slate-900">
+                <div>
+                    <h2 class="text-[32px] text-white font-medium mb-4"><span class="text-cyan-600">L’Agence. <br></span>Une offre clé-en- <br>main</h2>
+                    <p class="text-[20px] text-white font-medium mb-6">Vous energiteris, on s`occupe <br>du reste</p>
+                    <button class="w-[196px] h-[64px] font-medium bg-slate-100 hover:bg-slate-400 rounded-4xl">Nous contacter</button>
+                </div>
+                <!-- <div class="flex"> -->
+                    <div class="flex gap-8">
+                    <div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl mb-7">
+                    <img src="./img/rocket (1).svg" alt="">
+                    <p class="text-[20px] font-medium text-white "><span class="text-cyan-600">Décollage réussi</span> <br> Accompagnement sur le <br> positionnement, le <br> format et le design. <br> Installation et formation <br> sur le matériel</p>                 
+                </div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl">
+                    <img src="./img/check-circle.svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-cyan-600">Création d’un contenu pilier </span> <span class="text-cyan-600">attrayant</span> <br>Rédaction des titres, <br> descriptions et vignettes de <br> l’épisode</p>                 
+                </div>
+                </div>
+                <div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl mb-7">
+                    <img src="./img/check-circle.svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-cyan-600">Montage et diffusion </span> <span class="text-cyan-600">premium</span> <br>Post-production, <br> habillage musical, <br> diffusion <br> multiplateformes et <br> référencement optimisé</p>                 
+                </div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl">
+                    <img src="./img/check-circle.svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-cyan-600">Transformation en posts </span> <span class="text-cyan-600">variés</span> <br>1 épisode de podcast —> <br> Des Réels Instagram, TikTok, <br> blog, newsletter, posts <br> LinkedIn etc</p>                 
+                </div>
+                </div>
+                </div>
+                </div>
+                <!-- 2-chi peich -->
+                    <div class="w-[1080px] flex justify-between rounded-3xl p-10  bg-violet-950">
+                <div>
+                    <h2 class="text-[32px] text-white font-medium mb-4"><span class="text-violet-500">La Formation.<br></span>Pour lancer un <br> podcast à succès en <br> autonomie</h2>
+                    <button class="w-[196px] h-[64px] font-medium bg-slate-100 hover:bg-slate-400 rounded-4xl">En savoir plus</button>
+                </div>
+                <!-- <div class="flex"> -->
+                    <div class="flex gap-8">
+                    <div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl mb-7">
+                    <img class="mb-4" src="./img/check-circle (1).svg" alt="">
+                    <p class="text-[20px] font-medium text-white "><span class="text-violet-500">8 modules de formation</span> <br>Vidéo, texte et exercices <br> : apprenez à enregistrer, <br> créer, produire, <br> promouvoir un podcast et <br> à créer une machine à <br> contenus pour vos <br> réseaux</p>                 
+                </div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl">
+                    <img src="./img/check-circle (1).svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-violet-500">Accès au groupe privé de  </span> <span class="text-violet-500">podcasteurs</span> <br>Campagne de cross- <br>promotion, best-practice <br> et partage de statistiques <br> pour booster votre <br> motivation et votre <br> réussite</p>                 
+                </div>
+                </div>
+                <div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl mb-7">
+                    <img src="./img/check-circle (1).svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-violet-500">Coaching individuel à </span> <span class="text-violet-500">chaque étape</span> <br>De l’idée au lancement, <br> on vous aide à créer du <br> contenu unique et adapté <br> à votre marché</p>                 
+                </div>
+                <div class="w-[317px] bg-black p-7 rounded-3xl">
+                    <img src="./img/check-circle (1).svg" alt="">
+                    <p class="text-[20px] font-medium text-white mb-2 "><span class="text-violet-500">Nos outils + templates =</span> <span class="text-violet-500"> gain de temps + </span> <br> <span class="text-violet-500">économie</span> <br>Notion pour préparer et <br> planifier vos épisodes, <br> séquence d’emails pour <br> “invité médiatisé”, pitch <br> deck pour trouver des <br> sponsors, kit de matériel <br> à acheter etc</p>                 
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- media -->
+
+
+    <script src="./media.js"></script>
+</body>
+</html>
